@@ -1,5 +1,6 @@
 *
 !**/**/
 !**/**/*.py
-*_test.py
+!**/**/*.json
+# *_test.py
 **/**/__pycache
