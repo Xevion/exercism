@@ -6,4 +6,4 @@ This is just a repo for storing all of my Exercism exercises somewhere off-site,
 
 ## Sections
 
-### [Python](./python/README.md)
+* **[Python](./python/README.md)**
