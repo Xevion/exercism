@@ -1,6 +1,9 @@
 names = {'V' : 'Violets', 'R' : 'Radishes', 'C' : 'Clover', 'G' : 'Grass'}
 default = ['Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Fred', 'Ginny', 'Harriet', 'Ileana', 'Joseph', 'Kincaid', 'Larry']
 
+# Note: The pytest for this exercise may be broken. It errors, yet the assertEquals answer provided does not match what should be given.
+# I believe this pytest to be partially broken (the second test only).
+
 class Garden(object):
     def __init__(self, diagram, students=default):
         self.diagram, self.students = diagram, students
