@@ -14,7 +14,7 @@ def parse(markdown):
             line = '<h1>' + line[2:] + '</h1>'
         m = re.match(r'\* (.*)', line)
         if m:
-            in_list, is_bold, is_italic = not in_list, False, False
+            in_list, is_bold, is_italic = True, False, False
             current_line = m.group(1)
             # Bold
             strongmatch = re.match('(.*)__(.*)__(.*)', current_line)
@@ -29,7 +29,7 @@ def parse(markdown):
                     '</em>' + italicmatch.group(3)
                 is_italic = True
                 
-            line = '<ul><li>' + current_line + '</li>' if not in_list else '<li>' + current_line + '</li>'
+            line = '<ul><li>' + current_line + '</li></ul>' if not in_list else '<li>' + current_line + '</li>'
         else:
             if in_list:
                 in_list_append = True
