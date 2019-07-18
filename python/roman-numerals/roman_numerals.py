@@ -22,6 +22,3 @@ def roman(n):
             n -= best
             res += numerals[best]
         return res
-
-for i in range(2950, 35000, 13):
-    print('{} -> {}'.format(i, roman(i)))
