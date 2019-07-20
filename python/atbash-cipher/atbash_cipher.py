@@ -12,8 +12,8 @@ def groupings(text, groupby=5):
 def sanitize(text):
     return ''.join(text.translate(san).split())
 
-def encode(plain_text):
-    return ' '.join(groupings(sanitize(plain_text.translate(enc).lower())))
+def encode(plain_text, groupby=5):
+    return ' '.join(groupings(sanitize(plain_text.translate(enc).lower()), groupby=groupby))
 
 def decode(ciphered_text):
     return ''.join(ciphered_text.translate(dec).lower().split())
