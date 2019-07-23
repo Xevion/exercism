@@ -29,13 +29,13 @@ class RestAPI(object):
 
     def post(self, url, payload=None):
         if not payload:
-            raise("No payload for URL \'{}\'".foramt(url))
+            raise("No payload for URL \'{}\'".format(url))
         elif url == '/add':
             return self.add(payload) or json.dumps('?')
         elif url == '/iou':
             return self.iou(payload) or json.dumps('?')
         else:
-            raise ValueError("Invalid URL \'{}\'".foramt(url))
+            raise ValueError("Invalid URL \'{}\'".format(url))
 
     def get_user(self, name):
         found = [user for user in self.database['users'] if user['name'] == name]
@@ -43,7 +43,6 @@ class RestAPI(object):
             return found[0]
         else:
             raise ValueError('User \'{}\' does not exist.'.format(name))
-            return False
 
     def set_user(self, name, data):
         found = [(index, user) for index, user in enumerate(self.database['users']) if user['name'] == name]
@@ -53,7 +52,6 @@ class RestAPI(object):
             print(self.database['users'][found[0][0]])
         else:
             raise ValueError('User \'{}\' does not exist.'.format(name))
-            return False
 
     # Add a user to the database
     def add(self, payload):
