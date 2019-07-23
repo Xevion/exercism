@@ -1,9 +1,12 @@
-# Exercism
+# Comments
 
-## Purpose
+This file encompasses all comments from all exercises in the {} track. There are currently {} exercises, and {} that have comments.
 
-This is just a repo for storing all of my Exercism exercises somewhere off-site, as well as to build up my git experience and usage.
+## Hello World
 
-## Sections
+[File Link][1f] | [Submission Link][1s]
 
-* **[Python](./python/README.md)**
+Easy enough exercise. :3
+
+[1f]: ./test.html
+[1s]: ./
