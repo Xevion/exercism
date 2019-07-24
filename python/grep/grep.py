@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from functools import partial
 
 all_flags = ['n', 'l', 'i', 'v', 'x', 'm'] # m for multiple files
