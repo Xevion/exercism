@@ -82,6 +82,11 @@ for track in tracks.keys():
         file.write(markdown)
     print('Wrote {} KiB file for {} track'.format(round(os.path.getsize(path) / 1024, 2), track))
 t2 = time.time()
+<<<<<<< HEAD
 
 # Sorry for this ridiculously long line. ;-;
 print('Downloaded {} MiB in webpages.\nDownloaded & parsed in {} seconds with {}ms on average request time.'.format(round(sum([i[1] for i in request_timings]) / (1024 ** 2), 2), round(t2 - t1, 2), round((sum(i[0] for i in request_timings) / len(request_timings)) * 1000, 2)))
+=======
+# Sorry for this ridiculously long line. ;-;
+print('Downloaded {} MiB in webpages.\nDownloaded & Parsed in {} seconds with {}ms on average request time.'.format(round(sum([i[1] for i in request_timings]) / (1024 ** 2), 2), round(t2 - t1, 2), round((sum(i[0] for i in request_timings) / len(request_timings)) * 1000, 2)))
+>>>>>>> refs/remotes/origin/master

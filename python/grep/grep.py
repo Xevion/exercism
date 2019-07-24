@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from functools import partial
 
 all_flags = ['n', 'l', 'i', 'v', 'x', 'm'] # m for multiple files
@@ -49,3 +50,7 @@ def grep_individual(pattern, flags, filename):
         return ''
 
 print(grep("may", "-n -m", ['grep_test.py']))
+=======
+def grep(pattern, flags, files):
+    pass
+>>>>>>> refs/remotes/origin/master
