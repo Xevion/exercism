@@ -39,15 +39,18 @@ def construct(verse):
         if versen == 2:
             return middle.format(names[versen], names[versen-1] + ' ' + special_middle)
         return middle.format(names[versen], names[versen-1])
+
     # Horse verse
     if verse == 7:
         return "{}\n{}".format(intro.format(names[verse]), last)
+    
     # Constructs the intoduction of a verse
     constructed_intro = '{}{}'.format(
         intro.format(names[verse]),
         '\n' + intro_addendums[verse-1] if verse > 0 else ''
     )
-    # Constructs the middle verse using make middle
+
     constructed_middle = '\n'.join([''] + [makemiddle(versen) for versen in range(verse, 0, -1)]) if verse >= 1 else ''
-    # Finally constructs the entire properly.
+
+    # Finally constructs the entire verse properly.
     return "{}{}{}".format(constructed_intro, constructed_middle, '\n' + outro)

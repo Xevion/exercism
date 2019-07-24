@@ -2,7 +2,7 @@
 
 This page represents all my comments from my solutions currently hosted on [Exercism.io](https://exercism.io/). You can view my profile [here](https://exercism.io/profiles/Xevion).
 The reason for this is simply to have a place where I can collect my comments, as well as just have some fun with Python and webscraping. Exercise file and exercise submission links will be provided for each and every exercise.
-This file is for the **Python** track, contains **48** submissions, **18** of which have comments. This file was built on **24-07-2019** at **04:30:19 UTC**.
+This file is for the **Python** track, contains **53** submissions, **21** of which have comments. This file was built on **24-07-2019** at **20:44:28 UTC**.
 
 ## Word Count
 
@@ -206,11 +206,29 @@ I don't like this solution since the measurements are off and they don't provide
 
 The pytester looks wrong to me. I tested mine online and double checked that it's doing it correctly, and the solutions on the Instructions page look right, yet mine do not solve test correctly through the pytester. I dunno, it feels weird for it to be wrong for such a simple problem.
 
+## ETL
+
+[Link to File](./etl/etl.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/etl/solutions/0b06a001a17647c89efc9e975b61f648)
+
+To this day, the way dictionary and list comprehension works, as in, the order you have to put it, with the nested unpacking (`for value in values`), it messes with me still to this day. I'm just glad it works, because it's simply amazing.
+
+## Prime Factors
+
+[Link to File](./prime-factors/prime_factors.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/prime-factors/solutions/8594f50d455a42c2bcaaf99a23da57ec)
+
+
+
 ## Scrabble Score
 
 [Link to File](./scrabble-score/scrabble_score.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/scrabble-score/solutions/ee423be717314687b974302d5cc82503)
 
 
+
+## Sublist
+
+[Link to File](./sublist/sublist.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/sublist/solutions/a217429e9ed74c7f8d0e72bb6660d881)
+
+50th exercise in the Python Track. Not exactly my favorite exercise, finding sublists in lists. How fun. How exciting. How empowering.
 
 ## Robot Name
 
@@ -275,6 +293,18 @@ Truly cursed.
 [Link to File](./markdown/markdown.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/markdown/solutions/75a6c2148fe940eb841a8ebc24e8b6ad)
 
 
+
+## Food Chain
+
+[Link to File](./food-chain/food_chain.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/food-chain/solutions/b890dc4d044149a7bfbd854912c68bbf)
+
+
+
+## Spiral Matrix
+
+[Link to File](./spiral-matrix/spiral_matrix.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/spiral-matrix/solutions/e351192377fc41329076c9d6636ef233)
+
+There is probably a better, mathematical way of doing this, maybe using recursion, but I'm really bad with numbers, so I just went with an easier but probably slower way to do it.
 
 ## Raindrops
 
