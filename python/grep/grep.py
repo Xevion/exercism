@@ -48,9 +48,3 @@ def grep_individual(pattern, flags, filename):
             if localmatch(pattern, line):
                 return filename
         return ''
-
-print(grep("may", "-n -m", ['grep_test.py']))
-=======
-def grep(pattern, flags, files):
-    pass
->>>>>>> refs/remotes/origin/master
