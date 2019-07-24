@@ -2,7 +2,7 @@
 
 This page represents all my comments from my solutions currently hosted on [Exercism.io](https://exercism.io/). You can view my profile [here](https://exercism.io/profiles/Xevion).
 The reason for this is simply to have a place where I can collect my comments, as well as just have some fun with Python and webscraping. Exercise file and exercise submission links will be provided for each and every exercise.
-This file is for the **Python** track, contains **47** submissions, **17** of which have comments. This file was built on **23-07-2019** at **23:47:58 UTC**.
+This file is for the **Python** track, contains **48** submissions, **18** of which have comments. This file was built on **24-07-2019** at **04:03:49 UTC**.
 
 ## Word Count
 
@@ -232,6 +232,12 @@ I forgot that a couple things could be omitted, and decided to trim the nouns so
 [Link to File](./clock/clock.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/clock/solutions/5ea6c6c4c840489da2850d5d3dacd63f)
 
 
+
+## Grep
+
+[Link to File](./grep/grep.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/grep/solutions/c5d464b7392248d6adaab310e49803f5)
+
+I liked this exercise honestly. I learned about some new modules and methods, for example, while trying to create the invert flag, I was looking into how to negate the matching function, and the `functools` module allows one to create a wrapper that can negate any function you pass through it.
 
 ## Tournament
 
