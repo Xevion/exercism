@@ -2,7 +2,7 @@
 
 This page represents all my comments from my solutions currently hosted on [Exercism.io](https://exercism.io/). You can view my profile [here](https://exercism.io/profiles/Xevion).
 The reason for this is simply to have a place where I can collect my comments, as well as just have some fun with Python and webscraping. Exercise file and exercise submission links will be provided for each and every exercise.
-This file is for the **Python** track, contains **48** submissions, **18** of which have comments. This file was built on **24-07-2019** at **04:10:14 UTC**.
+This file is for the **Python** track, contains **48** submissions, **18** of which have comments. This file was built on **24-07-2019** at **04:30:19 UTC**.
 
 ## Word Count
 
@@ -167,6 +167,9 @@ This exercise should be renamed 'Cardinal Numbers' or something along those line
 
 Added comments for clarification on what stuff does. For some reason Pytest fails, I believe it's got some kind of problem with it, as only 1 of the 5 tests fails, and I don't exactly see the reason why, so I have reason to believe the pytest itself is incorrect.
 
+Here's my pytest output, which looks correct yet it errors anyways:
+https://gist.github.com/Xevion/87995553d7b078208b5dd1f72371db69
+
 ## Grade School
 
 [Link to File](./grade-school/grade_school.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/grade-school/solutions/fe5fbb3e83c14bb392fcc8c1a0275e57)
@@ -238,6 +241,10 @@ I forgot that a couple things could be omitted, and decided to trim the nouns so
 [Link to File](./grep/grep.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/grep/solutions/c5d464b7392248d6adaab310e49803f5)
 
 I liked this exercise honestly. I learned about some new modules and methods, for example, while trying to create the invert flag, I was looking into how to negate the matching function, and the `functools` module allows one to create a wrapper that can negate any function you pass through it.
+
+Additionally, I learned that `filter(None, container)` can filter out any and all `False` (in a boolean context, e.g. `None`/`[]`/`''`) items. I actually used that one.
+
+Otherwise, this exercise was pretty thorough in making one think, and I really had to put my skills to the test to create a scene which I genuinely liked. However, the implementation of overwriting the `open()` function for the pytests seems kind of rigid and would make debugging difficult for anyone running into weird problems (of which I thankfully did not).
 
 ## Tournament
 

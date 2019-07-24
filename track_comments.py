@@ -1,3 +1,4 @@
+import progressbar as pb
 import requests
 import pprint
 import datetime
@@ -20,7 +21,7 @@ def simpleReq(url):
 def parseComment(name, url, soup):
     comment = soup.find(get_reflection)
     if comment['class'] == ['reflection']:
-        return descend(comment)[3].text
+        return '\n\n'.join(list(map(lambda item : item.text, comment.find_all('p'))))
     return ''
 
 # This script works on the assumption that you have a setup similar to mine.
@@ -52,7 +53,12 @@ tracks = {k : list() for k in dict.fromkeys(list(map(lambda i : get_url(i[1]), s
 
 # Get all comment data & parse, then put into track dictionary
 print('Requesting Page Data for {} solution{} from {} {}'.format(len(solutions), 's' if len(solutions) > 1 else '', len(tracks.keys()), 'different tracks' if abs(len(tracks.keys())) != 1 else 'track'))
-solutions = [(solution[0], solution[1], bs4.BeautifulSoup(simpleReq(solution[1]), 'html.parser')) for solution in solutions]
+# Progress bar
+temp = []
+for solution in pb.progressbar(solutions):
+    soup = bs4.BeautifulSoup(simpleReq(solution[1]), 'html.parser')
+    temp.append((solution[0], solution[1], soup))
+solutions = temp
 solutions = [{'name' : solution[0], 'url' : solution[1], 'comment' : parseComment(*solution)} for solution in solutions]
 
 # Send all the solutions to their appropriate tracks.
