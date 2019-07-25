@@ -31,11 +31,11 @@ locales_currency = {
 }
 
 class LedgerEntry(object):
-    def __init__(self, date, description, change):
+    def __init__(self, date, desc
+    6ption, change):
         self.date, self.description, self.change = date, description, change
 
-def create_entry(date, description, change):
-    return LedgerEntry(datetime.strptime(date, '%Y-%m-%d'), description, change)
+create_entry = lambda date, description, change: LedgerEntry(datetime.strptime(date, '%Y-%m-%d'), description, change)
 
 def format_entries(currency, locale, entries):
     table = []
