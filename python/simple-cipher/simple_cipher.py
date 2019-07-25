@@ -9,7 +9,6 @@ class Cipher(object):
             self.key = list(abc)
             shuffle(self.key)
             self.key = ''.join(self.key)
-
         key_values = [self.keyvalue(i) for i in range(len(self.key))]
         self.key_alphabets = [(abc[index:] + abc[: index]) for index in key_values]
 

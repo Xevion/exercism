@@ -2,7 +2,7 @@
 
 This page represents all my comments from my solutions currently hosted on [Exercism.io](https://exercism.io/). You can view my profile [here](https://exercism.io/profiles/Xevion).
 The reason for this is simply to have a place where I can collect my comments, as well as just have some fun with Python and webscraping. Exercise file and exercise submission links will be provided for each and every exercise.
-This file is for the **Python** track, contains **53** submissions, **21** of which have comments. This file was built on **24-07-2019** at **20:44:28 UTC**.
+This file is for the **Python** track, contains **55** submissions, **22** of which have comments. This file was built on **25-07-2019** at **02:56:20 UTC**.
 
 ## Word Count
 
@@ -218,6 +218,18 @@ To this day, the way dictionary and list comprehension works, as in, the order y
 
 
 
+## Simple Cipher
+
+[Link to File](./simple-cipher/simple_cipher.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/simple-cipher/solutions/6d5485599e744039a9d97ab829528b7f)
+
+I personally had a lot of trouble understanding this exercise at first, I wish the exercise description was more clear on how it worked. The Wikipedia page linked doesn't talk about this strange key-value rotation cipher from hell. Unfortunately, I had to look at someone else's solution before I could figure it out, and I now fully understand how it works and can probably rewrite this off the top of my head (just clarifying, because I don't feel I've accomplished the intent of the exercise if I just copy).
+
+There was one thing that bothered me though: despite us only having a usable set of 26 characters to work with, the instructions asked me to make a key of at least 100 characters. This is kind of crazy if you ask me, as it's completely useless to have a key of more than 26 characters for lowercase only, and even with uppercase (which is specifically NOT supported in this) the maximum useful key value is 52 unique characters.
+
+Additionally, I've changed it so it has translation table like stuff already built. This will incur a time cost if the key is larger than the texts you intend to encode (for example, a 26 character key, and you encode a 5 character text. You will not be using 80% of the key tables generated in the cipher object. The time cost incurred should be negligible and if we're being honest, it doesn't matter that much, if you're using it for anything, your text should be at least 30 or so characters.
+
+If I could make any changes, it would to support upper and lowercase, and then to extend that, punctuation and whitespace, though if you ask me, this would make the cipher easier to break in most cases. I would also change all the variables and methods (except encode/decode) to be privatized.
+
 ## Scrabble Score
 
 [Link to File](./scrabble-score/scrabble_score.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/scrabble-score/solutions/ee423be717314687b974302d5cc82503)
@@ -305,6 +317,12 @@ Truly cursed.
 [Link to File](./spiral-matrix/spiral_matrix.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/spiral-matrix/solutions/e351192377fc41329076c9d6636ef233)
 
 There is probably a better, mathematical way of doing this, maybe using recursion, but I'm really bad with numbers, so I just went with an easier but probably slower way to do it.
+
+## Ledger
+
+[Link to File](./ledger/ledger.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/ledger/solutions/e2e05dcdf02f44bdbf5f727a551742b5)
+
+
 
 ## Raindrops
 

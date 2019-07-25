@@ -31,8 +31,7 @@ locales_currency = {
 }
 
 class LedgerEntry(object):
-    def __init__(self, date, desc
-    6ption, change):
+    def __init__(self, date, description, change):
         self.date, self.description, self.change = date, description, change
 
 create_entry = lambda date, description, change: LedgerEntry(datetime.strptime(date, '%Y-%m-%d'), description, change)
