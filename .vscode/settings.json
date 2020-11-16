@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "A:\\Installations\\Anaconda\\python.exe",
+    "python.pythonPath": "X:\\Users\\Xevion\\Anaconda3\\python.exe",
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": false,
     "python.linting.pylintEnabled": false,

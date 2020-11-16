@@ -2,7 +2,7 @@
 
 This page represents all my comments from my solutions currently hosted on [Exercism.io](https://exercism.io/). You can view my profile [here](https://exercism.io/profiles/Xevion).
 The reason for this is simply to have a place where I can collect my comments, as well as just have some fun with Python and webscraping. Exercise file and exercise submission links will be provided for each and every exercise.
-This file is for the **Python** track, contains **55** submissions, **22** of which have comments. This file was built on **25-07-2019** at **02:56:20 UTC**.
+This file is for the **Python** track, contains **57** submissions, **24** of which have comments. This file was built on **31-07-2019** at **15:36:13 UTC**.
 
 ## Word Count
 
@@ -218,6 +218,12 @@ To this day, the way dictionary and list comprehension works, as in, the order y
 
 
 
+## Pig Latin
+
+[Link to File](./pig-latin/pig_latin.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/pig-latin/solutions/4a3eab6787d64b43af2d7c777df7cf17)
+
+This one was a rather annoying challenge. Just like Pam Beesly, I despise Pig Latin now.
+
 ## Simple Cipher
 
 [Link to File](./simple-cipher/simple_cipher.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/simple-cipher/solutions/6d5485599e744039a9d97ab829528b7f)
@@ -253,6 +259,14 @@ If I could make any changes, it would to support upper and lowercase, and then t
 [Link to File](./matrix/matrix.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/matrix/solutions/a911d0005ac2488fa1386754d609a929)
 
 
+
+## Saddle Points
+
+[Link to File](./saddle-points/saddle_points.py) | [Link to Submission](https://exercism.io/tracks/python/exercises/saddle-points/solutions/142ada3a5e35437baa24b9bddb78a991)
+
+Ugh, the problem with exercises like this is you HAVE to specify if you're passing `rows` or `columns` first, in `y, x` or `x, y` format, and most of all, please just let us pass back tuples instead of these dumb dictionaries.
+
+Oh, and I totally could have made a decision to do list/dictionary comprehension here, I just kinda got wrapped up in the `y, x` or `x, y` stuff. It really trips me out.
 
 ## Twelve Days
 
