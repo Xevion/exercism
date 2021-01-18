@@ -12,6 +12,6 @@ defmodule WordCount do
     |> String.downcase()
     |> String.split(@splitters)
     |> Enum.filter(&(String.length(&1) > 0))
-    |> Enum.reduce(%{}, fn (word, count) -> Map.update(count, word, 1, &(&1 + 1)) end)
+    |> Enum.reduce(%{}, fn word, count -> Map.update(count, word, 1, &(&1 + 1)) end)
   end
 end
