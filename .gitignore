@@ -1,0 +1,23 @@
+# Repository level
+.vscode/**
+.idea/**
+.pytest_cache/**
+.elixir_ls/**
+
+# Python
+python/**/__pycache__/**
+python/**/.pytest_cache/**
+tempCodeRunnerFile.py
+*.pyc
+
+# Java
+java/**/.idea/**
+java/**/.gradle/**
+java/**/bin/**
+java/**/build/**
+java/**/*.iml
+
+# Clojure
+clojure/**/target/**
+clojure/**/.lein*
+clojure/**/.nrepl-port
