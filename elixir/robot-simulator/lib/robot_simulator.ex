@@ -40,11 +40,8 @@ defmodule RobotSimulator do
         %Robot{position: position, direction: direction} = robot,
         <<head::bytes-size(1)>> <> tail
       ) do
-    # {head, tail} = String.split_at(instructions, 1)
-
     case head do
       "A" ->
-        # Map.get_and_update!(robot, :position, &{&1, get_change(&1, robot.direction)})
         simulate(%Robot{robot | position: get_change(position, direction)}, tail)
 
       "L" ->
