@@ -1,0 +1,22 @@
+{
+  "blurb": "Reverse a string",
+  "authors": [
+    "gyssels"
+  ],
+  "contributors": [
+    "kchenery"
+  ],
+  "files": {
+    "solution": [
+      "ReverseString.ps1"
+    ],
+    "test": [
+      "ReverseString.tests.ps1"
+    ],
+    "example": [
+      ".meta/ReverseString.example.ps1"
+    ]
+  },
+  "source": "Introductory challenge to reverse an input string",
+  "source_url": "https://medium.freecodecamp.org/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb"
+}
