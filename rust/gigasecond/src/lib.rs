@@ -1,5 +1,3 @@
-use std::time::SystemTime;
-
 use time::PrimitiveDateTime as DateTime;
 
 const GIGASECOND_IN_SECONDS: i64 = 1_000_000_000;
