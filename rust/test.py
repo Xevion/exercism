@@ -3,6 +3,7 @@
 from pathlib import Path
 import re
 from subprocess import Popen, PIPE
+from colored import Fore, Style
 from typing import List, Tuple
 
 CURRENT_DIR = Path(__file__).parent
@@ -16,7 +17,16 @@ def main() -> None:
     for directory_path in test_directories:
         passed, total = test_directory(directory_path)
 
-        print(f"{directory_path.name}: {passed}/{total}")
+        passed_color = Fore.GREEN
+        if passed != total:
+            if passed == 0:
+                passed_color = Fore.RED
+            else:
+                passed_color = Fore.YELLOW
+        
+        total_color = Fore.BLUE
+
+        print(f"{directory_path.name} {passed_color}{passed}{Style.reset}/{total_color}{total}{Style.reset}")
 
 
 def test_directory(path: Path) -> Tuple[int, int]:
